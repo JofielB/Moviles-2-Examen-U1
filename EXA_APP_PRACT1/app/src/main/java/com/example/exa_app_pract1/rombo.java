@@ -15,28 +15,29 @@ import androidx.fragment.app.Fragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class circulo extends Fragment {
+public class rombo extends Fragment {
 
 
-    public circulo() {
+    public rombo() {
         // Required empty public constructor
     }
 
-    EditText editTextLado;
+    EditText editTextBase, editTextAltura;
     TextView textViewArea;
-    int lado;
-    double resultado;
+    int base, altura;
+    int resultado;
     Button resul;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.circulo,
+        View view = inflater.inflate(R.layout.triangulo,
                 container, false);
 
         // Inflate the layout for this fragment
-        editTextLado = view.findViewById(R.id.lado);
+        editTextBase = view.findViewById(R.id.base);
+        editTextAltura = view.findViewById(R.id.altura);
         textViewArea = view.findViewById(R.id.textView2);
 
         resul = view.findViewById(R.id.button);
@@ -45,14 +46,20 @@ public class circulo extends Fragment {
             @Override
             public void onClick(View v) {
 
-                lado = Integer.parseInt(editTextLado.getText().toString());
-                resultado = 3.1416 * (lado * lado);
+                base = Integer.parseInt(editTextBase.getText().toString());
+                altura = Integer.parseInt(editTextAltura.getText().toString());
+
+                resultado = (base * altura)/2;
                 textViewArea.setText("" + resultado);
 
             }
         });
 
+
         return view;
 
+
     }
+
+
 }

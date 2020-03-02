@@ -60,6 +60,36 @@ public class MainActivity extends AppCompatActivity {
                         ft.replace(R.id.container, circulo);
                         ft.commit();
                         break;
+                    case R.id.radioRombo:
+                        Toast.makeText(getApplicationContext(), "Rombo", Toast.LENGTH_SHORT).show();
+                        rombo rombo = new rombo();
+                        ft.replace(R.id.container, rombo);
+                        ft.commit();
+                        break;
+                    case R.id.radioEsfera:
+                        Toast.makeText(getApplicationContext(), "Esfera", Toast.LENGTH_SHORT).show();
+                        esfera esfera = new esfera();
+                        ft.replace(R.id.container, esfera);
+                        ft.commit();
+                        break;
+                    case R.id.radioCilindro:
+                        Toast.makeText(getApplicationContext(), "Cilindro", Toast.LENGTH_SHORT).show();
+                        cilindro cilindro = new cilindro();
+                        ft.replace(R.id.container, cilindro);
+                        ft.commit();
+                        break;
+                    case R.id.radioCubo:
+                        Toast.makeText(getApplicationContext(), "Cubo", Toast.LENGTH_SHORT).show();
+                        cubo cubo = new cubo();
+                        ft.replace(R.id.container, cubo);
+                        ft.commit();
+                        break;
+                    case R.id.radioCono:
+                        Toast.makeText(getApplicationContext(), "Cubo", Toast.LENGTH_SHORT).show();
+                        cono cono = new cono();
+                        ft.replace(R.id.container, cono);
+                        ft.commit();
+                        break;
 
                 }
 

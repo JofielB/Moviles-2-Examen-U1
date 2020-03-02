@@ -15,10 +15,10 @@ import androidx.fragment.app.Fragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class circulo extends Fragment {
+public class esfera extends Fragment {
 
 
-    public circulo() {
+    public esfera() {
         // Required empty public constructor
     }
 
@@ -32,7 +32,7 @@ public class circulo extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.circulo,
+        View view = inflater.inflate(R.layout.esfera,
                 container, false);
 
         // Inflate the layout for this fragment
@@ -46,7 +46,7 @@ public class circulo extends Fragment {
             public void onClick(View v) {
 
                 lado = Integer.parseInt(editTextLado.getText().toString());
-                resultado = 3.1416 * (lado * lado);
+                resultado = 4 * (3.1416 * (lado * lado));
                 textViewArea.setText("" + resultado);
 
             }
