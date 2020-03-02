@@ -2,9 +2,6 @@ package com.example.exa_app_pract1;
 
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,30 +9,30 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import androidx.fragment.app.Fragment;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FormulasFragment extends Fragment {
+public class circulo extends Fragment {
 
 
-    public FormulasFragment() {
+    public circulo() {
         // Required empty public constructor
     }
 
     EditText editTextLado;
     TextView textViewArea;
     int lado;
-    int resultado;
+    double resultado;
     Button resul;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.cuadrado,
+        View view = inflater.inflate(R.layout.circulo,
                 container, false);
 
         // Inflate the layout for this fragment
@@ -49,7 +46,7 @@ public class FormulasFragment extends Fragment {
             public void onClick(View v) {
 
                 lado = Integer.parseInt(editTextLado.getText().toString());
-                resultado = lado * lado;
+                resultado = 3.1416 * lado;
                 textViewArea.setText("" + resultado);
 
             }
