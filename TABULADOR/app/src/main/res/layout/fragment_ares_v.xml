@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ares_v"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ares" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="SCIENCE / TECHNOLOGY" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="SPACE ARES V"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="June 18" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Ares V (formerly known as the Cargo Launch Vehicle or CaLV) was the planned cargo launch component of the cancelled NASA Constellation program, which was to have replaced the Space Shuttle after its retirement in 2011. Ares V was also planned to carry supplies for a human presence on Mars.[3] Ares V and the smaller Ares I were named after Ares, the Greek god of war." />
+
+</LinearLayout>
