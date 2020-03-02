@@ -50,7 +50,7 @@ public class cilindro extends Fragment {
                 altura = Integer.parseInt(editTextAltura.getText().toString());
 
                 resultado = 2 * 3.1416 * base * (base + altura);
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

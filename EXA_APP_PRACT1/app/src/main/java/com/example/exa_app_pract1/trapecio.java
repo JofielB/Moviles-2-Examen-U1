@@ -52,7 +52,7 @@ public class trapecio extends Fragment {
                 altura = Integer.parseInt(editTextAltura.getText().toString());
 
                 resultado = ((base + base2) * altura) / 2;
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

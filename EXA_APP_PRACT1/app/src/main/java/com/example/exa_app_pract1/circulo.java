@@ -47,7 +47,7 @@ public class circulo extends Fragment {
 
                 lado = Integer.parseInt(editTextLado.getText().toString());
                 resultado = 3.1416 * (lado * lado);
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

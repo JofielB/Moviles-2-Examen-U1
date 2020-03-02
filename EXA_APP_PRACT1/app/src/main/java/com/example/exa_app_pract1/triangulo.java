@@ -50,7 +50,7 @@ public class triangulo extends Fragment {
                 altura = Integer.parseInt(editTextAltura.getText().toString());
 
                 resultado = (base * altura)/2;
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

@@ -50,7 +50,7 @@ public class cono extends Fragment {
                 altura = Integer.parseInt(editTextAltura.getText().toString());
 
                 resultado = 3.1416 * (base * altura);
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

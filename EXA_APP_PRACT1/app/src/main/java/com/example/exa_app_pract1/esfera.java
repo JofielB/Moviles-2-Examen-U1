@@ -47,7 +47,7 @@ public class esfera extends Fragment {
 
                 lado = Integer.parseInt(editTextLado.getText().toString());
                 resultado = 4 * (3.1416 * (lado * lado));
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

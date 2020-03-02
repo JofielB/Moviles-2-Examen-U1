@@ -47,7 +47,7 @@ public class cubo extends Fragment {
 
                 lado = Integer.parseInt(editTextLado.getText().toString());
                 resultado = 6 * (lado * lado);
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

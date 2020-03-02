@@ -50,7 +50,7 @@ public class rectangulo extends Fragment {
                 altura = Integer.parseInt(editTextAltura.getText().toString());
 
                 resultado = base * altura;
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

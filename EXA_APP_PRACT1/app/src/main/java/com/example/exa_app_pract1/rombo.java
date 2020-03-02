@@ -32,7 +32,7 @@ public class rombo extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.triangulo,
+        View view = inflater.inflate(R.layout.rombo,
                 container, false);
 
         // Inflate the layout for this fragment
@@ -50,7 +50,7 @@ public class rombo extends Fragment {
                 altura = Integer.parseInt(editTextAltura.getText().toString());
 
                 resultado = (base * altura)/2;
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });

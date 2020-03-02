@@ -50,7 +50,7 @@ public class FormulasFragment extends Fragment {
 
                 lado = Integer.parseInt(editTextLado.getText().toString());
                 resultado = lado * lado;
-                textViewArea.setText("" + resultado);
+                textViewArea.setText(resultado + " m^2");
 
             }
         });
